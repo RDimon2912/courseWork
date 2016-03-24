@@ -5,10 +5,10 @@
 using namespace std;
 
 int n, a[100500];
-char s[1000];
 
 int main() {
-	gets(s);
+	freopen ("input.txt", "r", stdin);
+	freopen ("output.txt", "w", stdout);
 	scanf ("%d", &n);
 	for (int i = 1; i <= n; i ++)
 		scanf ("%d", &a[i]);
