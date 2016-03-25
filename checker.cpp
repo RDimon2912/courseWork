@@ -3,22 +3,26 @@
 
 using namespace std;
 
-ifstream fin1("in1.in");
-ifstream fin2("in2.in");
-ifstream info("info.in");
+ifstream fin1("outCheck.txt");
+ifstream fin2("output.txt");
 
 int n;
 
 int main() {
-	info >> n;
-	for (int i = 1; i <= n; i ++) {
-		int a1, a2;
-		fin1 >> a1;
-		fin2 >> a2;
-		if (a1 != a2) {
-			cout << "false";
-			return 0;
+	while ( true ) {
+		int x1, x2;
+		bool ok1 = fin1 >> x1;
+		bool ok2 = fin2 >> x2;
+		if (!ok1 && !ok2) break;
+		if (ok1 && ok2) {
+			if (x1 != x2) {
+				cout << "false";
+				return 0;
+			}
+			continue;
 		}
+		cout << "false";
+		return 0;
 	}
 	cout << "true";
 	return 0;
