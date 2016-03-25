@@ -10,7 +10,6 @@ class Task
 		@in = "./intput.txt"
 		@timer = 3
 		@kol = 0
-		
 		@way = way.to_s
 		@name = name.to_s
 	end
@@ -32,9 +31,9 @@ class Task
 		return ((r - l) * 1000).to_i
 	end
 	def test(num)
-		`cp #{tests[ num.to_i ]} #{@in}`
-		time = start
-
+		`cp #{@tests[ num.to_i ]} #{@in}`
+		time = start.to_i
+		return time
 	end
 	def compiling
 		`g++ -Wall -o #{@name} #{@way}`
@@ -53,9 +52,8 @@ class Task
 	def addTimeError(timer)
 		@timer = timer.to_i
 	end
-
 end
-
+=
 taskA = Task.new("sort", "./main.cpp")
 taskA.compiling
 taskA.addTimeError(2)
