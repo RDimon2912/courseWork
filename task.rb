@@ -6,14 +6,14 @@ class Task
 	def initialize(name, way) 
 		@way = "./main.cpp"
 		@tests = []
-		@name = "sort"
 		@in = "./intput.txt"
+		@out = "./output.txt"
 		@timer = 3
 		@kol = 0
 		@way = way.to_s
 		@name = name.to_s
 	end
-	def addTest(way) 
+	def addTest(wayIn) 
 		@tests << way.to_s
 		@kol += 1
 	end
@@ -28,12 +28,11 @@ class Task
 			puts "Time Limit"
 		end
 		r = Time.now
-		return ((r - l) * 1000).to_i
+		((r - l) * 1000).to_i
 	end
 	def test(num)
 		`cp #{@tests[ num.to_i ]} #{@in}`
-		time = start.to_i
-		return time
+		start
 	end
 	def compiling
 		`g++ -Wall -o #{@name} #{@way}`
@@ -42,6 +41,11 @@ class Task
 			abort
 		end
 		puts "Build ok!"
+	end
+	def reBuild
+		`rm #{@name}`
+		`rm #{@in}`
+		`rm #{@out}`
 	end
 	def addFileIn(way)
 		@in = way.to_s
@@ -53,11 +57,12 @@ class Task
 		@timer = timer.to_i
 	end
 end
-=
+
 taskA = Task.new("sort", "./main.cpp")
 taskA.compiling
 taskA.addTimeError(2)
 taskA.addFileIn("./input.txt")
 taskA.addFileOut("./output.txt")
-taskA.addTest(".in/in1.in")
-taskA.test(0)
+taskA.addTest("./in/in1.in")
+puts "#{taskA.test(0)}ms"
+taskA.reBuild
