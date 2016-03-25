@@ -22,7 +22,7 @@ class Task
 		l = Time.now
 		begin
 			Timeout::timeout( @timer.to_i ) do 
-				`#{@name}`
+				`./#{@name}`
 			end
 		rescue
 		Timeout::Error
@@ -62,3 +62,4 @@ taskA.addTimeError(2)
 taskA.addFileIn("./input.txt")
 taskA.addFileOut("./output.txt")
 taskA.addTest(".in/in1.in")
+taskA.test(0)
