@@ -63,19 +63,7 @@ class Task
 	end
 end
 
-taskA = Task.new("sort", "./main.cpp")
-puts taskA.compiling
-taskA.addTimeError(2)
-taskA.addFileIn("./input.txt")
-taskA.addFileOut("./output.txt")
-taskA.addTest("./in/in1.in")
-
-puts "#{taskA.test(0)}ms"
-
 class Checker < Task
-	def initialize(name, way)
-		super(name, way)
-	end
 	def de_compiling
 		`rm #{@name}`
 		`rm #{@in}`
@@ -84,6 +72,15 @@ class Checker < Task
 		`./#{@name}`
 	end
 end
+
+taskA = Task.new("sort", "./main.cpp")
+puts taskA.compiling
+taskA.addTimeError(2)
+taskA.addFileIn("./input.txt")
+taskA.addFileOut("./output.txt")
+taskA.addTest("./in/in1.in")
+
+puts "#{taskA.test(0)}ms"
 
 checker = Checker.new("checker", "./checker.cpp")
 checker.compiling
