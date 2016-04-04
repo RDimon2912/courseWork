@@ -23,7 +23,7 @@ class Task
 		l = Time.now
 		begin
 			Timeout::timeout( @timer.to_i ) do 
-				@get = `./#{@name}`
+				@get = runner
 			end
 		rescue
 		Timeout::Error
@@ -58,6 +58,9 @@ class Task
 	def addTimeError(timer)
 		@timer = timer.to_i
 	end
+	def runner
+		`./#{@name} < #{@in} > #{@out}`
+	end
 end
 
 taskA = Task.new("sort", "./main.cpp")
@@ -78,6 +81,9 @@ end
 def checker.start
 	super
 	@get
+end
+def checker.runner
+	`./#{@name}`
 end
 
 checker.addFileIn("./outCheck.txt")
