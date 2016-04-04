@@ -44,7 +44,7 @@ class Task
 			"Build ok!"
 		end
 	end
-	def reBuild
+	def de_compiling
 		`rm #{@name}`
 		`rm #{@in}`
 		`rm #{@out}`
@@ -72,27 +72,29 @@ taskA.addTest("./in/in1.in")
 
 puts "#{taskA.test(0)}ms"
 
-checker = Task.new("checker", "./checker.cpp")
+class Checker < Task
+	def initialize(name, way)
+		super(name, way)
+	end
+	def de_compiling
+		`rm #{@name}`
+		`rm #{@in}`
+	end	
+	def runner
+		`./#{@name}`
+	end
+end
+
+checker = Checker.new("checker", "./checker.cpp")
 checker.compiling
-def checker.reBuild
-	`rm #{@name}`
-	`rm #{@in}`
-end
-def checker.start
-	super
-	@get
-end
-def checker.runner
-	`./#{@name}`
-end
 
 checker.addFileIn("./outCheck.txt")
 checker.addFileOut("./output.txt")
 checker.addTest("./out/out1.out")
 p checker.test(0)
 
-taskA.reBuild
-checker.reBuild
+taskA.de_compiling
+checker.de_compiling
 
 class TestingTask
 	def initialize(task, checker) 
