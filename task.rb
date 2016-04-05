@@ -22,7 +22,7 @@ class Task
 	def start	
 		l = Time.now
 		begin
-			Timeout::timeout( @timer.to_i ) do 
+			Timeout::timeout(@timer.to_i ) do 
 				@get = runner
 			end
 		rescue
@@ -37,17 +37,18 @@ class Task
 		start
 	end
 	def compiling
-		`g++ -Wall -o #{@name} #{@way}`
-		if $? != 0
-			"Build faled!"
-		else
-			"Build ok!"
+		`g++ -Wall -fexceptions -O2 -std=c++11 -c #{@way} -o #{@name}.o 2> build_log.txt`
+		`g++ -o #{@name} #{@name}.o -s`
+		f = File.open("build_log.txt")
+		f.each do |str|
+			puts str
 		end
 	end
 	def de_compiling
 		`rm #{@name}`
 		`rm #{@in}`
 		`rm #{@out}`
+		`rm #{@name}.o`
 	end
 	def addFileIn(way)
 		@in = way.to_s
@@ -67,14 +68,16 @@ class Checker < Task
 	def de_compiling
 		`rm #{@name}`
 		`rm #{@in}`
+		`rm #{@name}.o`
 	end	
 	def runner
 		`./#{@name}`
 	end
 end
 
-taskA = Task.new("sort", "./main.cpp")
-puts taskA.compiling
+taskA = Task.new("sort", "main.cpp")
+taskA.compiling
+
 taskA.addTimeError(2)
 taskA.addFileIn("./input.txt")
 taskA.addFileOut("./output.txt")
@@ -89,6 +92,7 @@ checker.addFileIn("./outCheck.txt")
 checker.addFileOut("./output.txt")
 checker.addTest("./out/out1.out")
 p checker.test(0)
+
 
 taskA.de_compiling
 checker.de_compiling

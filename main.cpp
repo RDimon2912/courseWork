@@ -1,19 +1,18 @@
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
+#include <set>
 
 using namespace std;
 
-int n, a[100500];
+int n, a;
+multiset < int > s;
 
 int main() {
-	freopen ("input.txt", "r", stdin);
-	freopen ("output.txt", "w", stdout);
 	scanf ("%d", &n);
 	for (int i = 1; i <= n; i ++)
-		scanf ("%d", &a[i]);
-	sort (a + 1, a + 1 + n);
-	for (int i = 1; i <= n; i ++)
-		printf ("%d ", a[i]);
-	return 0;	
+		scanf ("%d", &a), s.insert (a);
+	for (auto it : s)
+		printf ("%d ", it);
+	return 0;
 }
