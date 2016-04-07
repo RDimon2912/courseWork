@@ -18,7 +18,6 @@ class Task
 		@tests << way.to_s
 		@kol += 1
 	end
-
 	def start	
 		l = Time.now
 		begin
