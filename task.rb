@@ -36,9 +36,9 @@ class Task
 		start
 	end
 	def compiling
-		`g++ -Wall -fexceptions -O2 -std=c++11 -c #{@way} -o #{@name}.o 2> build_log.txt`
+		`g++ -Wall -fexceptions -O2 -std=c++11 -c #{@way} -o #{@name}.o 2> build_log_#{@name}.txt`
 		`g++ -o #{@name} #{@name}.o -s`
-		f = File.open("build_log.txt")
+		f = File.open("build_log_#{@name}.txt")
 		f.each do |str|
 			puts str
 		end

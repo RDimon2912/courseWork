@@ -1,0 +1,7 @@
+main.cpp: In function ‘int main()’:
+main.cpp:12:18: warning: ignoring return value of ‘int scanf(const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+  scanf ("%d", &n);
+                  ^
+main.cpp:14:33: warning: ignoring return value of ‘int scanf(const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+   scanf ("%d", &a), s.insert (a);
+                                 ^
