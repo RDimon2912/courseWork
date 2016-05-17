@@ -1,0 +1,13 @@
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int main()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:15:1: error: ‘as’ was not declared in this scope
+ as
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:17:2: error: expected ‘;’ before ‘for’
+  for (int i = 1; i <= n; i ++) 
+  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:17:18: error: ‘i’ was not declared in this scope
+  for (int i = 1; i <= n; i ++) 
+                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:17:30: error: expected ‘;’ before ‘)’ token
+  for (int i = 1; i <= n; i ++) 
+                              ^
