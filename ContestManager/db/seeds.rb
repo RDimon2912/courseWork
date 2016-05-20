@@ -12,5 +12,5 @@
 #c2   = CompileMethod.create(name: "ruby", run: "ruby solve.rb", ext: "rb")
 #sol  = Solution.create(path: "~/test/LehaTashit.cpp", compile_method: CompileMethod.all[0], task: Task.last)
 #sol2 = Solution.create(path: "~/gitTest/test.rb", compile_method: CompileMethod.last, task: Task.last)
-Task.all.each { |t| t.retesting }
-sleep(10)
+#Task.all.each { |t| t.retesting }
+#sleep(10)

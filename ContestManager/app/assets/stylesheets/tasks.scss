@@ -1,0 +1,138 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.list_line_even {
+	background: #e0f8f8;
+}
+
+.list_line_odd {
+	background: #f8b0f8;
+}
+
+.problems_statement {
+	float: left;
+	margin: 1.5em auto 2em 0;
+	max-width: 62.5em;
+	font-family: verdana,serif;
+	line-height: 1.5em;
+	font-size: 14px;
+	
+	border-width: 0 10px ;
+	border-style: solid;
+	border-color: #cbcbcb;
+	padding: 0 1em;
+	
+	.header_statement {
+		margin-bottom: 1em;
+		text-align: center;
+		line-height: 1.5em;
+		font-size: 14px;
+
+		.title {
+			font-size: 170%;
+			font-family: arial;
+			margin-bottom: 0.25em;
+		}
+
+	}
+
+	.legend {
+		margin-bottom: 1em;
+	}
+	.section_title {
+		font-family: arial;
+		font-size: 115%;
+		font-weight: bold;
+	}
+	.sample-test, {
+		.output {
+			margin-bottom: 1em;
+			position: relative;
+			top: -1px;
+		}
+		.input, .output {
+			border: 1px solid #888;
+			.title {
+	    		font-family: arial;
+    			padding: 3px;
+    			border-bottom: 1px solid #888;
+    			text-transform: lowercase;
+    			font-weight: bold;
+			}
+			pre {
+    			line-height: 1.25em;
+    			padding: 0.25em;
+	    		margin: 0;
+    			background-color: #efefef;
+    		}
+		}
+	}
+	
+}
+
+.promlems_solutions {
+	float: right;
+	margin-top: 1.5em;
+	padding-top: 3px;
+	width: 16em;
+	display: inline;
+	border: 1px solid rgb(185, 185, 185);
+	position: relative;
+	border-radius: 10px;
+	text-align: center;
+
+	.best {
+		color: #191428;
+		margin: 1em;
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-bottom: 0.3em;
+		padding-bottom: 0.2em;
+		border-bottom:  1px solid rgb(185, 185, 185);
+	}
+	
+	table {
+		margin: 0 auto;	
+		text-align: center;
+		color: #3B5998;
+		font-size: 0.8em;
+		tr {
+			padding: 0 ;
+			td {
+				padding: 3px 2px;
+			}
+		}	
+
+	}
+	.send {
+		
+		 p {
+		 	padding-top: 1em;
+		 	font-weight: bold;
+		 	border-top:  1px solid rgb(185, 185, 185);
+		 }
+		.button {
+			color: #8A4384;
+			border: 2px solid #595959;
+			border-radius: 10px;
+			padding: 0.5em;	
+			
+		}	
+		.button:hover {
+			background-color: #cbcbcb;
+		}
+		.button:link {
+			text-decoration: none;
+		}
+		.table-form {
+			text-align: left;
+			margin: 0 1em;
+		}	
+		#file, #comp_id {
+			font-size: 0.8em;	
+		}
+	}
+	
+}

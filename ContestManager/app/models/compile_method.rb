@@ -3,6 +3,7 @@ class CompileMethod < ActiveRecord::Base
 	has_many :solutions
 
 	validates :ext, presence: true
+	validates :run, presence: true
 
 	after_create do 
 		@path = HOME + "/solutions/#{self.name}"
@@ -18,6 +19,7 @@ class CompileMethod < ActiveRecord::Base
 	end
 
 	before_destroy do 
+		@path = HOME + "/solutions/#{self.name}"
 		Solution.where("compile_method_id = ?", self.id).each { |s| s.destroy }
 		spawn("rm", "-r", @path) if Dir.exist?(@path)
 	end

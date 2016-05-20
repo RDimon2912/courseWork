@@ -33,4 +33,10 @@ class Task < ActiveRecord::Base
 		solves.each { |s| s.running }
 	end
 
+	def true_solves
+		sum = 0
+		Solution.where("task_id = ?", self.id).each { |x| sum += 1 if x.verdict == "OK" }
+		sum
+	end
+
 end

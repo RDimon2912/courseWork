@@ -1,0 +1,57 @@
+// Place all the styles related to the Contest controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.database {
+	border-radius: 5px;
+	font-family: veranda;
+	background-color: rgb(225, 225, 225);
+	padding:3px;
+}
+.database h3 {
+	font-size: 1em;
+	text-align: center;
+	margin: 0;
+}
+
+.field {
+	background-color: white;
+	border-radius: 5px;
+
+	table tr td {
+		padding: 0;
+		vertical-align: top;
+		width: auto !important;
+	}
+	.list_line_even {
+		background: #e0f8f8;
+	}
+	.list_line_odd {
+		background: #f8b0f8;
+	}
+	.left, .name {
+		width: 95%;
+	}
+	.right, .num {
+		width: 5%;
+	}
+	.list_line_even, .list_line_odd {
+		.name, .num, a {
+			margin: 0;
+			color: #244;
+			font-weight: bold;
+			font-size: large;
+		}
+		
+	}
+	.name, .num {
+		padding: 1em;
+	}
+	.num {
+		text-align: right;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+	
+}

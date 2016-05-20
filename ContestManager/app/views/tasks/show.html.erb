@@ -1,0 +1,104 @@
+<div class = "problems_statement" >
+	<div class = "header_statement" >
+		<div class = "title"><%= @task.name %> </div>
+		<div>time limit: <%= @task.time_limit %>s</div>
+		<div>memory limit: 256mb</div>
+		<div>input: standart input</div>
+		<div>output: standart output</div>
+	</div>
+	<div class = "legend"><%= @task.description %></div>
+	<div class = "input_specification">
+		<div class = "section_title">Входные данные</div>
+		<p></p>
+		<p>В первой строке входных данных находятся три целых числа d1, d2, d3 (1 ≤ d1, d2, d3 ≤ 10^8) — длины дорожек. </p>
+
+    	<p>d1 — длина дорожки, соединяющей дом Патрика и первый магазин;<br>
+    	d2 — длина дорожки, соединяющей дом Патрика и второй магазин;<br>
+    	d3 — длина дорожки, соединяющей два магазина. </p>
+	</div>
+	<div calss = "output_specification">
+		<div class = "section_title">Выходные данные</div>
+		<p></p>
+		<p>Выведите минимальное количество метров, которое придётся пройти Патрику, чтобы посетить оба магазина и вернуться домой.</p>
+	</div>
+	<div class = "section_title">Примеры</div>
+	<p></p>
+	<p></p>
+	<div class = "sample-test">
+		<div class = "input">
+			<div class = "title">Входные данные</div>
+			<pre class = "content">10 20 30 </pre>
+		</div>
+		<div class = "output">
+			<div class = "title">Выходные данные</div>
+			<pre class = "content">60 </pre>
+		</div>
+		<div class = "input">
+			<div class = "title">Входные данные</div>
+			<pre class = "content">1 1 5 </pre>
+		</div>
+		<div class = "output">
+			<div class = "title">Выходные данные</div>
+			<pre class = "content">4 </pre>
+		</div>
+	</div>
+	
+	<div class = "note">
+		<div class = "section_title">Примечание</div>
+		<p></p>
+		<p>Первый пример изображён на рисунке в условии задачи. Одним из оптимальных маршрутов является: дом -> первый магазин -> второй магазин -> дом.</p>
+		<p>Во втором примере одним из оптимальных маршрутов является: дом -> первый магазин -> дом второй магазин -> дом.</p>
+	</div>
+	</div>
+</div>
+
+<div class = "promlems_solutions"> 
+	<div class = "best">Лучшие решения</div>
+	<table> 
+	
+	<tr>
+		<td>Solve id</td>
+		<td>Verdict</td>
+		<td>Time</td>
+		<td>Language</td>
+	</tr>
+	<% @solves.each do |solve| %>
+		<tr class= "<%= cycle('list_line_odd', 'list_line_even')%>" >
+			<td><%= solve.id.to_i %></td>
+			<% verd = solve.verdict %>
+			<% if verd == "OK" %>
+				<td style="color: green"><%= verd %></td>
+			<% else %>
+				<td style="color: red"><%= solve.verdict %></td>
+			<% end %>
+			<td>
+				<% time = solve.time_run %>
+				<%= time ? time : "-" %>
+			</td>
+			<td><%= solve.compile_method.name %></td>
+		</tr>
+	<% end %>
+	</table>
+	<div class = "send">
+	<p>Отправить решение</p>
+	<table class = "table-form" style="width: 80%">
+		<tbody>
+			<%= form_tag({action: :submit, controller: :solution}, {multipart: true, method: :put, id: @task } ) do %>
+				<% compilers = CompileMethod.all.map { |comp|  [comp.name, comp.id] } %>
+				<tr>
+					<td>Язык:</td>
+					<td><%= select_tag(:comp_id, options_for_select(compilers, 1) )%></td>
+				</tr>
+				<tr>
+					<td>Выберите файл</td> 
+					<td><%= file_field_tag :file %></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><%= submit_tag "Отослать", class: "button" %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+	</div>
+</div>

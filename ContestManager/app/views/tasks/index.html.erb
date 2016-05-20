@@ -1,0 +1,27 @@
+<h1>Listening tasks</h1>
+
+<table> 
+	<% @tasks.each do |task| %>
+		<tr>
+			<%= task.name %>
+		</tr>
+	<% end %>
+	<tr>
+		<td>Solve id</td>
+		<td>Verdict</td>
+		<td>Time</td>
+		<td>Language</td>
+	</tr>
+	<% @solutions.each do |solve| %>
+		<tr class= "<%= cycle('list_line_odd', 'list_line_even')%>" >
+			<td><%= solve.id.to_i %></td>
+			<td><%= solve.verdict %></td>
+			<td>
+				<% time = solve.time_run %>
+				<%= time ? time : "-" %>
+			</td>
+			<td><%= solve.compile_method.name %></td>
+		</tr>
+	<% end %>
+</table>
+ 

@@ -13,6 +13,7 @@ class Solution < ActiveRecord::Base
 		newPath = HOME + "/solutions/#{method.name}/#{self.id}"
 		spawn("touch", "#{newPath}.#{method.ext}")
 		`cp #{self.path} #{newPath}.#{method.ext}`
+		`rm #{self.path}`
 		self.update(path: newPath, verdict: "Received")
 		running
 	end

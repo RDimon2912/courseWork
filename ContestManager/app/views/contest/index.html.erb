@@ -1,0 +1,19 @@
+<div class="database">
+	<div style="font-size:1.4em; position:relative;">
+		<h3>Задачи</h3>
+	</div>
+	<div class="field">
+		<table>
+			<tr>
+				<th class = "left">Название</th>
+				<th class = "right">Количество решивших</th>
+			</tr>
+			<% @tasks.each do |task| %>
+			<tr class="<%= cycle :list_line_odd, :list_line_even %>">
+				<td class="name"><%= link_to task.name, task %></td>
+				<td class="num"><%= task.true_solves%></td>
+			</tr>
+			<% end %>
+		</table>
+	</div>
+</div>
