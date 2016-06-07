@@ -1,3 +1,105 @@
 // Place all the styles related to the solution controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.pagination {
+	margin-top: 1em;
+	margin: 0 auto;
+	font-size: 1rem;
+
+	ul, li {
+		list-style: none;
+	}
+	ul li {
+		display: inline;
+	}
+
+	.active {
+		border: 1px solid #ddd;
+		background-color: #eee;
+		font-weight: bold;
+	}
+
+	.page_index, .active {
+		padding: 0.25em;
+	}	
+	a.page_index, a.active {
+		text-decoration: none !important;
+		color: black;		
+	}
+}
+
+
+.database .field {
+	table {
+		width: 100%;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		th, td {
+			border-right: 1px solid #e1e1e1;
+			border-left: 1px solid #e1e1e1;
+			border-bottom: 1px solid #e1e1e1;
+		}
+		
+	}
+
+	.task_name {
+		padding: 1em;
+		text-align: center;
+		min-width: 50%;
+		width: auto;
+	}
+
+	.top {
+		padding: 0.4em;
+		overflow: hidden;
+	}
+	.elem {
+		background-color: #f8f8f8;
+		text-align: center;
+		padding: 0.4em;
+		overflow: hidden;
+	}
+
+}
+
+.roundbox {
+	margin-top: 2em;
+	font-size: 1.1rem;
+	border: 1px solid rgb(185, 185, 185);
+	position: relative;
+	background-color: white;
+	border-radius: 5px;
+	.caption_titled {
+		padding: 0 0 0.3em 0.5em;
+		border-bottom: 1px solid rgb(185, 185, 185);
+		color: #3B5998;
+		font-weight: bold;
+		margin: 0.2em 0;
+		position: relative;
+	}
+	.program_code {
+		padding: 0.5em;
+		border: 1px solid #888;
+		pre {
+			margin: 0;
+			font-size: 110%;
+		}
+	}
+}
+
+.accepted {
+	font-weight: bold;
+	color: green;
+}
+
+.fail {
+	font-weight: normal;
+	color: red;
+}
+
+.accepted, .fail {
+	text-align: center;
+}

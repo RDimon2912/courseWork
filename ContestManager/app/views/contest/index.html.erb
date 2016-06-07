@@ -10,7 +10,7 @@
 			</tr>
 			<% @tasks.each do |task| %>
 			<tr class="<%= cycle :list_line_odd, :list_line_even %>">
-				<td class="name"><%= link_to task.name, task %></td>
+				<td class="name"><%= link_to task.name, task_path(id: task.id) %></td>
 				<td class="num"><%= task.true_solves%></td>
 			</tr>
 			<% end %>

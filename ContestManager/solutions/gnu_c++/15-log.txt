@@ -1,0 +1,10 @@
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int main()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:7:12: error: ‘n’ was not declared in this scope
+     cin >> n;
+            ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:9:16: error: ‘a’ was not declared in this scope
+         cin >> a[i];
+                ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:10:11: error: ‘a’ was not declared in this scope
+     sort (a + 1, a + 1 + n);
+           ^

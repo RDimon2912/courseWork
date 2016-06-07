@@ -1,0 +1,3 @@
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:1:1: error: ‘asds’ does not name a type
+ asds
+ ^

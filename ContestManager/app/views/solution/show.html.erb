@@ -1,0 +1,55 @@
+
+<div class = "database">
+	<div style="font-size:1em; position:relative;">
+		<h3>Решения</h3>
+	</div>
+	<div class="field">
+		<table>
+			<tbody>
+				<tr>
+					<th class="top">№</th>
+					<th class="top">Задача</th>
+					<th class="top">Язык</th>
+					<th class="top">Вердикт</th>
+					<th class="top">Время</th>
+					<th class="top">Отослано</th>
+					<th class="top">Протестировано</th>
+				</tr>
+				<tr>
+					<td class="elem">
+					<%= @solve.id %>
+					</td>
+					<td class="elem">
+					<%= link_to @solve.task.name, task_path(@solve.task_id) %>
+					</td>
+					<td class="elem"><%= @solve.compile_method.name %></td>
+					
+					<% verd = @solve.verdict %>
+					<% if verd == "OK" %>
+						<td class="elem accepted"><%= @solve.verdict %></td>
+					<% else %>
+						<td class="elem fail"><%= @solve.verdict %></td>
+					<% end %>
+					<td class="elem"><%= @solve.time_run %>ms</td>
+					<td class="elem"><%= @solve.created_at.strftime('%F %R') %></td>
+					<td class="elem"><%= @solve.updated_at.strftime('%F %R') %></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="roundbox">
+	<div class="caption_titled">Исходный код</div>
+	<div class="program_code">
+		<pre><% File.open(@path, "r").each do |line| %><%= line %><% end %></pre>
+	</div>
+</div>
+<% if @solve.verdict == "CE" %>
+<div class="roundbox">
+	<div class="caption_titled">Ошибки компилятора</div>
+	<div class="program_code">
+		<pre><% File.open(@path_log, "r").each do |line| %><%= line %><% end %></pre>
+	</div>
+</div>
+<% end %>

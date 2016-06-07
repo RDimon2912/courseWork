@@ -2,9 +2,6 @@
 	<div class = "header_statement" >
 		<div class = "title"><%= @task.name %> </div>
 		<div>time limit: <%= @task.time_limit %>s</div>
-		<div>memory limit: 256mb</div>
-		<div>input: standart input</div>
-		<div>output: standart output</div>
 	</div>
 	<div class = "legend"><%= @task.description %></div>
 	<div class = "input_specification">
@@ -64,16 +61,14 @@
 	</tr>
 	<% @solves.each do |solve| %>
 		<tr class= "<%= cycle('list_line_odd', 'list_line_even')%>" >
-			<td><%= solve.id.to_i %></td>
-			<% verd = solve.verdict %>
-			<% if verd == "OK" %>
-				<td style="color: green"><%= verd %></td>
-			<% else %>
-				<td style="color: red"><%= solve.verdict %></td>
-			<% end %>
+			<td style="text-align: center;">
+				<%= link_to(solve.id.to_s, "/tasks/#{solve.task_id}/status/#{solve.id}") %>				
+			</td>
+	
+			<td class="accepted" style="color: green"><%= solve.verdict %></td>
 			<td>
 				<% time = solve.time_run %>
-				<%= time ? time : "-" %>
+				<%= time ? time.to_s + "ms" : "-" %>
 			</td>
 			<td><%= solve.compile_method.name %></td>
 		</tr>
@@ -83,7 +78,7 @@
 	<p>Отправить решение</p>
 	<table class = "table-form" style="width: 80%">
 		<tbody>
-			<%= form_tag({action: :submit, controller: :solution}, {multipart: true, method: :put, id: @task } ) do %>
+			<%= form_tag( task_submit_path(@task.id) , {multipart: true, method: :post } ) do %>
 				<% compilers = CompileMethod.all.map { |comp|  [comp.name, comp.id] } %>
 				<tr>
 					<td>Язык:</td>
@@ -100,5 +95,8 @@
 			<% end %>
 		</tbody>
 	</table>
+	</div>
+	<div class="show_solution">
+	<%= link_to "Показать решения", {controller: :solution, action: :status, task_id: @task} %>
 	</div>
 </div>

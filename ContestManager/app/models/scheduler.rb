@@ -44,17 +44,19 @@ class Scheduler < ActiveRecord::Base
 		path_out = HOME + "/solutions/" + solve.compile_method.name + "/output.txt"
 		path_err = HOME + "/solutions/" + solve.compile_method.name + "/errors.txt"
 		limit = solve.task.time_limit
-		tl = Time.now
 		pid = nil
+		tr = nil
+		tl = Time.now
 		begin
 			Timeout::timeout( limit ) do
-				pid ||= spawn(solve.compile_method.run, in: test.path_in, out: path_out, err: path_err)	
+				pid ||= Process.spawn(solve.compile_method.run, in: test.path_in, out: path_out, err: path_err)	
 				Process.waitpid(pid)
 			end
 		rescue Timeout::Error
+			tr ||= Time.now
 			`kill -9 #{pid}`
 		end		
-		tr = Time.now	
+		tr ||= Time.now	
 		timer = ((tr - tl) * 1000).to_i
 		ret = {t: timer, v: nil}
 		ret[:v] ||= "TL" if timer > limit*1000

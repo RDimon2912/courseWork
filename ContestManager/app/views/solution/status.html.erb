@@ -1,0 +1,57 @@
+
+<div class = "database">
+	<div style ="font-size: 1em; position: relative;" >
+		<h3>Решения</h4>
+	</div>
+	<div class="field">
+		<table>
+			<tr>
+				<th>Solve id</th>
+				<th>When</th>
+				<th class="task_name">Task</th>
+				<th>Verdict</th>
+				<th>Time</th>
+				<th>Language</th>
+			</tr>
+			</tr>
+			<% @solves.each do |solve| %>
+				<tr class= "<%= cycle('list_line_odd', 'list_line_even')%>" >
+					<td style="text-align: center;">
+					<%= link_to(solve.id.to_s, "/tasks/#{solve.task_id}/status/#{solve.id}") %>
+					</td>
+					<td><%= solve.created_at.strftime('%F %R') %></td>
+					<td><%= link_to solve.task.name, task_path(solve.task_id) %></td>
+					<% verd = solve.verdict %>
+					<% if verd == "OK" %>
+						<td class="accepted"><%= verd %></td>
+					<% else %>
+						<td class="fail"><%= solve.verdict %></td>
+					<% end %>
+
+					
+					<td>
+						<% time = solve.time_run %>
+						<%= time ? time.to_s+"ms" : "-" %>
+					</td>
+					<td><%= solve.compile_method.name %></td>
+				</tr>
+			<% end %>
+		</table>
+	</div>
+</div>
+
+<div class = "pagination">
+	<ul>
+	<% @kol_pages.times do |i| %>
+		<%= content_tag :li do %>
+			<%= content_tag(:span, (i+1)) do %> 
+				<% if @page_num.to_i == i + 1 %>
+					<%= link_to(i + 1, {controller: :solution, action: :status, page_id: i + 1}, {class: :active}) %>
+				<% else %>
+					<%= link_to(i + 1, {controller: :solution, action: :status, page_id: i + 1}, {class: :page_index}) %>
+				<% end %>
+			<% end %>
+		<% end %>
+	<% end %>
+	</ul>
+</div>

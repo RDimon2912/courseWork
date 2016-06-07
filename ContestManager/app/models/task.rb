@@ -5,6 +5,7 @@ class Task < ActiveRecord::Base
 	has_many :tests
 	
 	validates :name, presence: true
+	validates :time_limit, numericality: {greater_than_or_equal_to: 0.01}
 
 	after_create do 
 		name = "#{self.id}-#{self.name.capitalize}"

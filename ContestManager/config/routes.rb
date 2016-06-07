@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
-  resources :tasks
-  put 'tasks/:id/submit' => 'solution#submit'
+  resources :tasks, only: [:create, :update, :edit, :destroy, :new]
+  resources :tasks, only: [:show, :index] do
+    get 'status(/page/:page_id)' => 'solution#status' 
+    get 'status/:solve_id' => 'solution#show'
+    post 'submit' => 'solution#submit'
+  end
+  
   root 'contest#index'
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

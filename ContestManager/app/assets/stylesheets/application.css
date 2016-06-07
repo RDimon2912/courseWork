@@ -16,8 +16,8 @@
 
 body {
  	padding-top: 0.7em;
- 	max-width: 1200px;
- 	min-width: 920px;
+ 	width: 1200px;
+ 	
  	margin: 0 auto;
 }
 

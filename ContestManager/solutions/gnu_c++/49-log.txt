@@ -1,0 +1,596 @@
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:1:2: error: invalid preprocessing directive #!
+ #!/usr/bin/env bash
+  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:14:7: error: stray ‘\’ in program
+       "$(\printf "%b" "${BASH_VERSION:-}\n${BASH_MIN_VERSION}\n" | LC_ALL=C \sort -t"." -k1,1n -k2,2n -k3,3n | \head -n1)" != "${BASH_MIN_VERSION}"
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:14:7: error: stray ‘\’ in program
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:33:3: error: stray ‘\’ in program
+   \which which >/dev/null 2>&1 || fail "Could not find 'which' command, make sure it's available first before continuing installation."
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:34:3: error: stray ‘\’ in program
+   \which grep >/dev/null 2>&1 || fail "Could not find 'grep' command, make sure it's available first before continuing installation."
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:40:5: error: stray ‘\’ in program
+     ${rvm_tar_command:-tar} --help 2>&1 | GREP_OPTIONS="" \grep -- --strip-components >/dev/null
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:53:34: error: stray ‘#’ in program
+       (Darwin|FreeBSD|DragonFly) # it's not possible to autodetect on OSX, the help/man does not mention all flags
+                                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:53:38: warning: missing terminating ' character [enabled by default]
+       (Darwin|FreeBSD|DragonFly) # it's not possible to autodetect on OSX, the help/man does not mention all flags
+                                      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:53:7: error: missing terminating ' character
+       (Darwin|FreeBSD|DragonFly) # it's not possible to autodetect on OSX, the help/man does not mention all flags
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:62:15: error: stray ‘\’ in program
+               if \which sudo >/dev/null 2>&1
+               ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:64:15: error: stray ‘\’ in program
+               elif \which /opt/csw/bin/sudo >/dev/null 2>&1
+               ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:86:5: error: stray ‘\’ in program
+     $rvm_tar_command --help 2>&1 | GREP_OPTIONS="" \grep -- --no-same-owner >/dev/null
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:94:15: warning: missing terminating " character [enabled by default]
+   printf "%b" "
+               ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:94:3: error: missing terminating " character
+   printf "%b" "
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:173:1: warning: missing terminating " character [enabled by default]
+ "
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:173:1: error: missing terminating " character
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:176:1: error: stray ‘##’ in program
+ ## duplication marker 32fosjfjsznkjneuera48jae
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:186:7: error: invalid preprocessing directive #make
+     # make sure --show-error is used with --silent
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:194:1: error: stray ‘##’ in program
+ ## duplication marker 32fosjfjsznkjneuera48jae
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:195:3: error: invalid preprocessing directive #-
+ # -S is automatically added to -s
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:218:3: error: stray ‘\’ in program
+   __rvm_debug_command \curl "${__flags[@]}" "$@" || return $?
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:235:3: error: invalid preprocessing directive #Searches
+ # Searches the tags for the highest available version matching a given pattern.
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:236:3: error: invalid preprocessing directive #fetch_version
+ # fetch_version (github.com/rvm/rvm bitbucket.org/mpapis/rvm) 1.10. -> 1.10.3
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:237:3: error: invalid preprocessing directive #fetch_version
+ # fetch_version (github.com/rvm/rvm bitbucket.org/mpapis/rvm) 1.10. -> 1.10.3
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:238:3: error: invalid preprocessing directive #fetch_version
+ # fetch_version (github.com/rvm/rvm bitbucket.org/mpapis/rvm) 1.    -> 1.11.0
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:239:3: error: invalid preprocessing directive #fetch_version
+ # fetch_version (github.com/rvm/rvm bitbucket.org/mpapis/rvm) ""    -> 2.0.1
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:248:14: warning: missing terminating " character [enabled by default]
+     _version="$(
+              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:248:5: error: missing terminating " character
+     _version="$(
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:250:7: error: stray ‘\’ in program
+       GREP_OPTIONS="" \grep "^${_pattern:-}" | tail -n 1
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:251:6: warning: missing terminating " character [enabled by default]
+     )"
+      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:251:5: error: missing terminating " character
+     )"
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:261:3: error: invalid preprocessing directive #Returns
+ # Returns a sorted list of all version tags from a repository
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:281:5: error: stray ‘\’ in program
+     \awk -v RS=',' -v FS='"' '$2=="name"{print $4}' |
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:281:30: warning: character constant too long for its type [enabled by default]
+     \awk -v RS=',' -v FS='"' '$2=="name"{print $4}' |
+                              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:329:3: error: invalid preprocessing directive #duplication
+ # duplication marker dfkjdjngdfjngjcszncv
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:330:3: error: invalid preprocessing directive #Drop
+ # Drop in cd which _doesn't_ respect cdpath
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:330:26: warning: missing terminating ' character [enabled by default]
+ # Drop in cd which _doesn't_ respect cdpath
+                          ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:352:9: error: invalid preprocessing directive #duplication
+       # duplication marker lfdgzkngdkjvnfjknkjvcnbjkncvjxbn
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:354:13: warning: missing terminating " character [enabled by default]
+         log "
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:354:9: error: missing terminating " character
+         log "
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:355:20: warning: character constant too long for its type [enabled by default]
+ Could not download '${_url}', you can read more about it here:
+                    ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:357:34: warning: character constant too long for its type [enabled by default]
+ To continue in insecure mode run 'echo insecure >> ~/.curlrc'.
+                                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:358:1: warning: missing terminating " character [enabled by default]
+ "
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:358:1: error: missing terminating " character
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:360:9: error: invalid preprocessing directive #duplication
+       # duplication marker lfdgzkngdkjvnfjknkjvcnbjkncvjxbn
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:362:13: warning: missing terminating " character [enabled by default]
+         log "
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:362:9: error: missing terminating " character
+         log "
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:365:1: warning: missing terminating " character [enabled by default]
+ "
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:365:1: error: missing terminating " character
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:367:9: error: invalid preprocessing directive #duplication
+       # duplication marker lfdgzkngdkjvnfjknkjvcnbjkncvjxbn
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:369:13: warning: missing terminating " character [enabled by default]
+         log "
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:369:9: error: missing terminating " character
+         log "
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:370:62: warning: missing terminating ' character [enabled by default]
+ Curl returned 141 - it is result of a segfault which means it's Curls fault.
+                                                              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:370:1: error: missing terminating ' character
+ Curl returned 141 - it is result of a segfault which means it's Curls fault.
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:373:1: warning: missing terminating " character [enabled by default]
+ "
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:373:1: error: missing terminating " character
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:376:13: warning: missing terminating " character [enabled by default]
+         log "
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:376:9: error: missing terminating " character
+         log "
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:377:20: warning: character constant too long for its type [enabled by default]
+ Could not download '${_url}'.
+                    ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:378:24: warning: character constant too long for its type [enabled by default]
+   curl returned status '$_return'.
+                        ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:379:1: warning: missing terminating " character [enabled by default]
+ "
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:379:1: error: missing terminating " character
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:386:3: error: invalid preprocessing directive #duplication
+ # duplication marker flnglfdjkngjndkfjhsbdjgfghdsgfklgg
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:400:3: error: invalid preprocessing directive #duplication
+ # duplication marker rdjgndfnghdfnhgfdhbghdbfhgbfdhbn
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:409:9: warning: missing terminating " character [enabled by default]
+     log "\
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:409:5: error: missing terminating " character
+     log "\
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:415:39: warning: multi-character character constant [-Wmultichar]
+ GPG signature verification failed for '$1' - '$3'!
+                                       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:415:46: warning: multi-character character constant [-Wmultichar]
+ GPG signature verification failed for '$1' - '$3'!
+                                              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:418:41: error: stray ‘##’ in program
+     ${SUDO_USER:+sudo }${rvm_gpg_command##*/} --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+                                         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:428:1: warning: missing terminating " character [enabled by default]
+ "
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:428:1: error: missing terminating " character
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:449:9: warning: missing terminating " character [enabled by default]
+     log "Found PGP signature at: '$1',
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:449:5: error: missing terminating " character
+     log "Found PGP signature at: '$1',
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:450:53: warning: missing terminating " character [enabled by default]
+ but no GPG software exists to validate it, skipping."
+                                                     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:450:1: error: missing terminating " character
+ but no GPG software exists to validate it, skipping."
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:467:3: error: stray ‘\’ in program
+   [[ -d "${rvm_src_path}/rvm" ]] || \mkdir -p "${rvm_src_path}/rvm"
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:622:27: error: unterminated comment
+           if [[ "$1" = */*/* ]]
+                           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:3:1: error: ‘shopt’ does not name a type
+ shopt -s extglob
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:27:5: error: ISO C++ forbids declaration of ‘log’ with no type [-fpermissive]
+ log()  { printf "%b\n" "$*"; }
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int log()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:27:10: error: ‘printf’ was not declared in this scope
+ log()  { printf "%b\n" "$*"; }
+          ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:27:17: error: expected ‘;’ before string constant
+ log()  { printf "%b\n" "$*"; }
+                 ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:28:7: error: ISO C++ forbids declaration of ‘debug’ with no type [-fpermissive]
+ debug(){ [[ ${rvm_debug_flag:-0} -eq 0 ]] || printf "%b\n" "Running($#): $*"; }
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int debug()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:28:14: error: expected ‘]’ before ‘{’ token
+ debug(){ [[ ${rvm_debug_flag:-0} -eq 0 ]] || printf "%b\n" "Running($#): $*"; }
+              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:28:11: error: expected identifier before ‘[’ token
+ debug(){ [[ ${rvm_debug_flag:-0} -eq 0 ]] || printf "%b\n" "Running($#): $*"; }
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In lambda function:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:28:43: error: expected ‘{’ before ‘||’ token
+ debug(){ [[ ${rvm_debug_flag:-0} -eq 0 ]] || printf "%b\n" "Running($#): $*"; }
+                                           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int debug()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:28:46: error: ‘printf’ was not declared in this scope
+ debug(){ [[ ${rvm_debug_flag:-0} -eq 0 ]] || printf "%b\n" "Running($#): $*"; }
+                                              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:28:53: error: expected ‘;’ before string constant
+ debug(){ [[ ${rvm_debug_flag:-0} -eq 0 ]] || printf "%b\n" "Running($#): $*"; }
+                                                     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:29:6: error: ISO C++ forbids declaration of ‘fail’ with no type [-fpermissive]
+ fail() { log "\nERROR: $*\n" ; exit 1 ; }
+      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int fail()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:29:14: error: expected ‘;’ before string constant
+ fail() { log "\nERROR: $*\n" ; exit 1 ; }
+              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:29:32: error: ‘exit’ was not declared in this scope
+ fail() { log "\nERROR: $*\n" ; exit 1 ; }
+                                ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:29:37: error: expected ‘;’ before numeric constant
+ fail() { log "\nERROR: $*\n" ; exit 1 ; }
+                                     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:31:28: error: ISO C++ forbids declaration of ‘rvm_install_commands_setup’ with no type [-fpermissive]
+ rvm_install_commands_setup()
+                            ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int rvm_install_commands_setup()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:33:4: error: ‘which’ was not declared in this scope
+   \which which >/dev/null 2>&1 || fail "Could not find 'which' command, make sure it's available first before continuing installation."
+    ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:33:10: error: expected ‘;’ before ‘which’
+   \which which >/dev/null 2>&1 || fail "Could not find 'which' command, make sure it's available first before continuing installation."
+          ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:40:31: error: ‘help’ was not declared in this scope
+     ${rvm_tar_command:-tar} --help 2>&1 | GREP_OPTIONS="" \grep -- --strip-components >/dev/null
+                               ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:40:36: error: expected ‘;’ before numeric constant
+     ${rvm_tar_command:-tar} --help 2>&1 | GREP_OPTIONS="" \grep -- --strip-components >/dev/null
+                                    ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:53:8: error: ‘Darwin’ was not declared in this scope
+       (Darwin|FreeBSD|DragonFly) # it's not possible to autodetect on OSX, the help/man does not mention all flags
+        ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:53:15: error: ‘FreeBSD’ was not declared in this scope
+       (Darwin|FreeBSD|DragonFly) # it's not possible to autodetect on OSX, the help/man does not mention all flags
+               ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:53:23: error: ‘DragonFly’ was not declared in this scope
+       (Darwin|FreeBSD|DragonFly) # it's not possible to autodetect on OSX, the help/man does not mention all flags
+                       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:53:36: error: expected ‘;’ before ‘it’
+       (Darwin|FreeBSD|DragonFly) # it's not possible to autodetect on OSX, the help/man does not mention all flags
+                                    ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:56:8: error: ‘SunOS’ was not declared in this scope
+       (SunOS)
+        ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:57:9: error: expected ‘;’ before ‘case’
+         case "$(uname -r)" in
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:76:13: error: expected primary-expression before ‘)’ token
+           (*)
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:77:13: error: expected ‘;’ before ‘rvm_tar_command’
+             rvm_tar_command=tar
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:79:9: error: ‘esac’ was not declared in this scope
+         esac
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:80:5: error: expected ‘;’ before ‘esac’
+     esac
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:81:49: error: expected primary-expression before ‘>’ token
+     builtin command -v ${rvm_tar_command:-gtar} >/dev/null ||
+                                                 ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:81:50: error: expected primary-expression before ‘/’ token
+     builtin command -v ${rvm_tar_command:-gtar} >/dev/null ||
+                                                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:81:51: error: ‘dev’ was not declared in this scope
+     builtin command -v ${rvm_tar_command:-gtar} >/dev/null ||
+                                                   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:81:55: error: ‘null’ was not declared in this scope
+     builtin command -v ${rvm_tar_command:-gtar} >/dev/null ||
+                                                       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:82:10: error: expected ‘;’ before string constant
+     fail "Could not find GNU compatible version of 'tar' command, make sure it's available first before continuing installation."
+          ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:92:7: error: ISO C++ forbids declaration of ‘usage’ with no type [-fpermissive]
+ usage()
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int usage()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:94:3: error: ‘printf’ was not declared in this scope
+   printf "%b" "
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:94:10: error: expected ‘;’ before string constant
+   printf "%b" "
+          ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:176:4: error: ‘duplication’ does not name a type
+ ## duplication marker 32fosjfjsznkjneuera48jae
+    ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:194:4: error: ‘duplication’ does not name a type
+ ## duplication marker 32fosjfjsznkjneuera48jae
+    ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:204:3: error: ‘typeset’ does not name a type
+   typeset -a __flags
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:222:13: error: ISO C++ forbids declaration of ‘__rvm_which’ with no type [-fpermissive]
+ __rvm_which(){   which "$@" || return $?; true; }
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int __rvm_which()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:222:18: error: ‘which’ was not declared in this scope
+ __rvm_which(){   which "$@" || return $?; true; }
+                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:222:24: error: expected ‘;’ before string constant
+ __rvm_which(){   which "$@" || return $?; true; }
+                        ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:223:21: error: ISO C++ forbids declaration of ‘__rvm_debug_command’ with no type [-fpermissive]
+ __rvm_debug_command()
+                     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int __rvm_debug_command()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:225:9: error: expected ‘;’ before string constant
+   debug "Running($#): $*"
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:229:25: error: ISO C++ forbids declaration of ‘rvm_is_a_shell_function’ with no type [-fpermissive]
+ rvm_is_a_shell_function()
+                         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int rvm_is_a_shell_function()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:231:6: error: expected ‘]’ before ‘-’ token
+   [[ -t 0 && -t 1 ]] || return $?
+      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:233:1: error: expected primary-expression before ‘}’ token
+ }
+ ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:233:1: error: expected ‘;’ before ‘}’ token
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:240:15: error: ISO C++ forbids declaration of ‘fetch_version’ with no type [-fpermissive]
+ fetch_version()
+               ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int fetch_version()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:242:3: error: ‘typeset’ was not declared in this scope
+   typeset _account _domain _pattern _repo _sources _values _version
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:242:11: error: expected ‘;’ before ‘_account’
+   typeset _account _domain _pattern _repo _sources _values _version
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:243:18: error: expected primary-expression before ‘)’ token
+   _sources=(${!1})
+                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:243:18: error: expected ‘;’ before ‘)’ token
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:249:33: error: ‘$’ was not declared in this scope
+       fetch_versions ${_domain} ${_account} ${_repo} |
+                                 ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:249:34: error: expected ‘;’ before ‘{’ token
+       fetch_versions ${_domain} ${_account} ${_repo} |
+                                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:249:46: error: expected ‘;’ before ‘{’ token
+       fetch_versions ${_domain} ${_account} ${_repo} |
+                                              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:249:54: error: expected primary-expression before ‘|’ token
+       fetch_versions ${_domain} ${_account} ${_repo} |
+                                                      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:250:7: error: ‘GREP_OPTIONS’ was not declared in this scope
+       GREP_OPTIONS="" \grep "^${_pattern:-}" | tail -n 1
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:250:24: error: expected ‘;’ before ‘grep’
+       GREP_OPTIONS="" \grep "^${_pattern:-}" | tail -n 1
+                        ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:253:25: error: expected primary-expression before ‘]’ token
+       [[ -n ${_version} ]]
+                         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:253:25: error: expected ‘;’ before ‘]’ token
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:262:16: error: ISO C++ forbids declaration of ‘fetch_versions’ with no type [-fpermissive]
+ fetch_versions()
+                ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int fetch_versions()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:264:3: error: ‘typeset’ was not declared in this scope
+   typeset _account _domain _repo _url
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:264:11: error: expected ‘;’ before ‘_account’
+   typeset _account _domain _repo _url
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:269:6: error: ‘bitbucket’ was not declared in this scope
+     (bitbucket.org)
+      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:269:19: error: ‘in’ was not declared in this scope
+     (bitbucket.org)
+                   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:270:7: error: expected ‘;’ before ‘_url’
+       _url=https://${_domain}/api/1.0/repositories/${_account}/${_repo}/branches-tags
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:272:6: error: ‘github’ was not declared in this scope
+     (github.com)
+      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:273:7: error: expected ‘;’ before ‘_url’
+       _url=https://api.${_domain}/repos/${_account}/${_repo}/tags
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:276:7: error: expected primary-expression before ‘)’ token
+     (*)
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:277:7: error: expected ‘;’ before ‘_url’
+       _url=https://${_domain}/api/v3/repos/${_account}/${_repo}/tags
+       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:279:3: error: ‘esac’ was not declared in this scope
+   esac
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:280:3: error: expected ‘;’ before ‘__rvm_curl’
+   __rvm_curl -s ${_url} |
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:280:25: error: expected primary-expression before ‘|’ token
+   __rvm_curl -s ${_url} |
+                         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:281:6: error: ‘awk’ was not declared in this scope
+     \awk -v RS=',' -v FS='"' '$2=="name"{print $4}' |
+      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:281:11: error: ‘v’ was not declared in this scope
+     \awk -v RS=',' -v FS='"' '$2=="name"{print $4}' |
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:281:13: error: expected ‘;’ before ‘RS’
+     \awk -v RS=',' -v FS='"' '$2=="name"{print $4}' |
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:285:17: error: ISO C++ forbids declaration of ‘install_release’ with no type [-fpermissive]
+ install_release()
+                 ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int install_release()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:287:3: error: ‘typeset’ was not declared in this scope
+   typeset _source _sources _url _version _verify_pgp
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:287:11: error: expected ‘;’ before ‘_source’
+   typeset _source _sources _url _version _verify_pgp
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:288:18: error: expected primary-expression before ‘)’ token
+   _sources=(${!1})
+                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:288:18: error: expected ‘;’ before ‘)’ token
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:294:8: error: ‘bitbucket’ was not declared in this scope
+       (bitbucket.org*)
+        ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:294:22: error: expected primary-expression before ‘)’ token
+       (bitbucket.org*)
+                      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:294:22: error: ‘in’ was not declared in this scope
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:295:9: error: expected ‘;’ before ‘_url’
+         _url="https://${_source}/get/${_version}.tar.gz"
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:298:9: error: expected primary-expression before ‘)’ token
+       (*)
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:299:9: error: expected ‘;’ before ‘_url’
+         _url="https://${_source}/archive/${_version}.tar.gz"
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:302:5: error: ‘esac’ was not declared in this scope
+     esac
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:303:5: error: expected ‘;’ before ‘get_and_unpack’
+     get_and_unpack "${_url}" "rvm-${_version}.tgz" "$_verify_pgp" && return
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:308:14: error: ISO C++ forbids declaration of ‘install_head’ with no type [-fpermissive]
+ install_head()
+              ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int install_head()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:310:3: error: ‘typeset’ was not declared in this scope
+   typeset _branch _source _sources _url
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:310:11: error: expected ‘;’ before ‘_branch’
+   typeset _branch _source _sources _url
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:311:18: error: expected primary-expression before ‘)’ token
+   _sources=(${!1})
+                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:311:18: error: expected ‘;’ before ‘)’ token
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:317:8: error: ‘bitbucket’ was not declared in this scope
+       (bitbucket.org*)
+        ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:317:22: error: expected primary-expression before ‘)’ token
+       (bitbucket.org*)
+                      ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:317:22: error: ‘in’ was not declared in this scope
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:318:9: error: expected ‘;’ before ‘_url’
+         _url=https://${_source}/get/${_branch}.tar.gz
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:320:9: error: expected primary-expression before ‘)’ token
+       (*)
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:321:9: error: expected ‘;’ before ‘_url’
+         _url=https://${_source}/archive/${_branch}.tar.gz
+         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:323:5: error: ‘esac’ was not declared in this scope
+     esac
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:324:5: error: expected ‘;’ before ‘get_and_unpack’
+     get_and_unpack "${_url}" "rvm-${_branch//\//_}.tgz" && return
+     ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:331:10: error: ISO C++ forbids declaration of ‘__rvm_cd’ with no type [-fpermissive]
+ __rvm_cd()
+          ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int __rvm_cd()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:333:3: error: ‘typeset’ was not declared in this scope
+   typeset old_cdpath ret
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:333:11: error: expected ‘;’ before ‘old_cdpath’
+   typeset old_cdpath ret
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:342:13: error: ISO C++ forbids declaration of ‘get_package’ with no type [-fpermissive]
+ get_package()
+             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int get_package()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:344:3: error: ‘typeset’ was not declared in this scope
+   typeset _url _file
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:344:11: error: expected ‘;’ before ‘_url’
+   typeset _url _file
+           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:348:27: error: ‘o’ was not declared in this scope
+   __rvm_curl -sS ${_url} -o ${rvm_archives_path}/${_file} ||
+                           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:348:29: error: expected ‘;’ before ‘$’
+   __rvm_curl -sS ${_url} -o ${rvm_archives_path}/${_file} ||
+                             ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:348:49: error: expected primary-expression before ‘/’ token
+   __rvm_curl -sS ${_url} -o ${rvm_archives_path}/${_file} ||
+                                                 ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:348:50: error: ‘$’ was not declared in this scope
+   __rvm_curl -sS ${_url} -o ${rvm_archives_path}/${_file} ||
+                                                  ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:348:51: error: expected ‘;’ before ‘{’ token
+   __rvm_curl -sS ${_url} -o ${rvm_archives_path}/${_file} ||
+                                                   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:348:59: error: expected primary-expression before ‘||’ token
+   __rvm_curl -sS ${_url} -o ${rvm_archives_path}/${_file} ||
+                                                           ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:349:3: error: expected primary-expression before ‘{’ token
+   {
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:349:3: error: expected ‘;’ before ‘{’ token
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: At global scope:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:387:23: error: ISO C++ forbids declaration of ‘rvm_install_gpg_setup’ with no type [-fpermissive]
+ rvm_install_gpg_setup()
+                       ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp: In function ‘int rvm_install_gpg_setup()’:
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:389:3: error: expected primary-expression before ‘export’
+   export rvm_gpg_command
+   ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:389:3: error: expected ‘;’ before ‘export’
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:622:26: error: expected ‘}’ at end of input
+           if [[ "$1" = */*/* ]]
+                          ^

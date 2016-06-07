@@ -1,0 +1,6 @@
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:4:57: error: empty character constant
+ a = [int(elem) for elem in a if elem != ' ' and elem != '']
+                                                         ^
+/home/dmitry/courseWork/ContestManager/solutions/gnu_c++/solve.cpp:1:1: error: ‘a’ does not name a type
+ a = raw_input()
+ ^
